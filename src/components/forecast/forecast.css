@@ -1,0 +1,22 @@
+.forecast{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.daily_item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-right: 1px solid #757575;
+    padding: 0 35px;
+    cursor: pointer;
+}
+
+.daily_item:last-child{
+    border: none;
+}
+
+.daily_item img{
+    width: 75px;
+}
