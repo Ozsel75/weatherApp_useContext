@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 import SearchContext from "../../context/SearchContext";
 import { SearchContextProvider } from "../../context/SearchContext";
+import "./search.css";
 
 function Search() {
   const { setCity } = useContext(SearchContext);
@@ -37,7 +38,7 @@ function Search() {
   };
 
   return (
-    <AsyncPaginate
+    <AsyncPaginate className="pagi"
       placeholder="Search for city"
       debounceTimeout={600}
       onChange={onChangeHandler}
